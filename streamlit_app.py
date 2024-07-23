@@ -9,8 +9,8 @@ classes = [' '.join(x.split(' ')[1:]).replace('\n','') for x in open('labels.txt
 model = load_model('keras_model.h5', compile = False)
 
 # Create the streamlit Title and camera_input
-st.title(f'Is it {classes[0]} or {classes[1]}!?')
-img_file_buffer = st.camera_input(f"Take a picture of {classes[0]} or {classes[1]}")
+st.title(f'Is it {classes[0]} or {classes[1]} or {classes[2]} or {classes[3]}!?')
+img_file_buffer = st.camera_input(f"Take a picture of {classes[0]} or {classes[1]} or {classes[2]} or {classes[3]}")
 
 
 # Trigger when a photo has been taken and the bugger is no longer None
